@@ -9,4 +9,4 @@ tags:
 image: /assets/blog/sketchpad.png
 imageAlt: Sketch of windmils
 ---
-Artikel ***over*** [windmolens](www.google.be)!
+Artikel ***over*** [windmolens](https://www.google.be)!
