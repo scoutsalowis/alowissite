@@ -1,0 +1,493 @@
+:root {
+    --clr-alowisgray: hsla(0, 0%, 58%);
+    --clr-alowisred: hsla(5, 80%, 54%);
+    --clr-alowisbrown: hsla(37, 37%, 76%);
+    --clr-alowisbrown-transparent: hsla(37, 37%, 76%, 0.9);
+
+    /* main background */
+    --clr-primary: var(white);
+    /* header/footer background */
+    --clr-accent: var(--clr-alowisbrown);
+    --clr-text: black;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/* Hoofd achtergrond kleur en tekstkleur van de site */
+html {
+    background-color: var(--clr-primary);
+    color: var(--clr-text);
+    height: 100%;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+body {
+    /* verwijder ruimte aan de rand voor header/footer */
+    margin: 0;
+
+    /* zorgt deels dat footer onderaan site staat */
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    width: 100%;
+    background-color: var(--clr-alowisbrown-transparent);
+    position: fixed;
+    z-index: 999;
+    text-align: center;
+}
+
+/* plaatst main onder de fixed header */
+main {
+    margin-top: 120px;
+    margin-left: 1em;
+    margin-right: 1em;
+    margin-bottom: 2em;
+}
+
+footer {
+    background-color: var(--clr-accent);
+    text-align: center;
+    margin-top: auto;
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    font-style: normal;
+}
+
+.tekstblok {
+    text-align: justify;
+}
+
+h1 {
+    font-size: 2rem;
+}
+
+h2 {
+    font-size: 1.5rem;
+}
+
+/* header styles */
+.logo {
+    max-height: 70px;
+    height: 100%;
+    margin: 0 auto;
+}
+
+nav {
+    position: absolute;
+    text-align: left;
+    width: 100%;
+    top: 100%;
+    left: 0;
+    background-color: var(--clr-alowisbrown-transparent);
+    transform: scale(1, 0);
+    transform-origin: top;
+    transition: transform 400ms ease-in-out;
+}
+
+nav li {
+    margin-bottom: 1em;
+    margin-left: 1em;
+}
+
+nav {
+    overflow-y: scroll;
+    max-height: 70vh;
+}
+
+.nav-sublist {
+    margin: 1em;
+}
+
+nav a,
+#takken {
+    color: inherit;
+    text-decoration: none;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    opacity: 0;
+    transition: opacity 150ms ease-in-out;
+}
+
+/* hamburger styles */
+.nav-toggle,
+#takken {
+    display: none;
+}
+
+.nav-toggle:checked~nav {
+    transform: scale(1, 1);
+}
+
+.nav-toggle:checked~nav a {
+    opacity: 1;
+    transition: opacity 250ms ease-in-out 250ms;
+}
+
+.nav-toggle-label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-left: 1em;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.nav-toggle-label span,
+.nav-toggle-label span::before,
+.nav-toggle-label span::after {
+    display: block;
+    background-color: var(--clr-text);
+    height: 2px;
+    width: 2em;
+    border-radius: 2px;
+    position: relative;
+}
+
+.nav-toggle-label span::before,
+.nav-toggle-label span::after {
+    content: '';
+    position: absolute;
+}
+
+.nav-toggle-label span::before {
+    bottom: 7px;
+}
+
+.nav-toggle-label span::after {
+    top: 7px;
+}
+
+/* footer styles */
+footer a {
+    display: block;
+    text-decoration: none;
+    color: var(--clr-alowisred);
+    margin: 0.4em;
+    width: 100%;
+}
+
+footer p {
+    margin: 0.4em;
+}
+
+footer p:first-of-type {
+    margin-top: 2em;
+}
+
+/* font awsome icons */
+.fai {
+    margin-right: 0.2em;
+}
+
+footer .fai {
+    color: var(--clr-alowisred);
+}
+
+/* banner */
+img.banner {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    max-width: 800px;
+}
+
+/* inschrijving styles */
+.inschrijvingform {
+    height: 2050px;
+    width: 100%;
+}
+
+/* verhuur styles */
+.verhuurtabel {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 0.80rem;
+}
+
+td,
+th {
+    padding: 8px;
+    text-align: left;
+    border-width: 0 1px 1px 0;
+}
+
+/* contact styles */
+.googlemaps {
+    max-width: 100%;
+    width: 600px;
+    height: 450px;
+}
+
+.facebookframe {
+    max-width: 100%;
+    width: 500px;
+    height: 500px;
+}
+
+/* takken styles */
+.alowiske {
+    aspect-ratio: 1/1.4142;
+}
+
+.takleiding {
+    border-radius: 40px;
+}
+
+.taklogo,
+.takleiding,
+.alowiske {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    max-width: 500px;
+}
+
+/* desktop styles */
+@media screen and (min-width: 800px) {
+
+    main {
+        margin-top: 1em;
+    }
+
+    /* header styles */
+    header {
+        background-color: var(--clr-accent);
+        position: static;
+        display: grid;
+        grid-template-columns: 1fr auto minmax(680px, 3fr) 1fr;
+    }
+
+    .logo {
+        max-height: 100px;
+    }
+
+    .nav-toggle-label:not(#takken) {
+        display: none;
+    }
+
+    #takken {
+        display: block;
+    }
+
+    .logo {
+        grid-column: 2 / 3;
+    }
+
+    nav {
+        all: unset;
+        grid-column: 3 / 4;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    nav ul {
+        display: flex;
+        justify-content: center;
+    }
+
+    nav li {
+        min-width: fit-content;
+        margin-left: 3em;
+        margin-bottom: 0;
+    }
+
+    nav a,
+    #takken {
+        opacity: 1;
+        position: relative;
+    }
+
+    nav a::before,
+    #takken::before {
+        content: '';
+        display: block;
+        height: 5px;
+        background: linear-gradient(120deg, var(--clr-alowisred) 50%, var(--clr-alowisgray) 50%);
+        position: absolute;
+        bottom: -.60em;
+        left: 0;
+        right: 0;
+        border-radius: 2px;
+        transform: scale(0, 1);
+        transition: transform ease-in-out 250ms;
+    }
+
+    nav a:hover::before,
+    #takken:hover::before {
+        transform: scale(1, 1);
+    }
+
+    /* sublist styles */
+    ul.nav-sublist {
+        position: absolute;
+        flex-direction: column;
+        text-align: left;
+        margin-left: 0;
+        background-color: var(--clr-accent);
+        border-radius: 0px 0px 15px 15px;
+
+        transform: scale(1, 0);
+        transform-origin: top;
+        transition: transform 400ms ease-in-out;
+    }
+
+    ul.nav-sublist a {
+        opacity: 0;
+        transition: opacity 150ms ease-in-out;
+    }
+
+    #subnav-toggle:checked~ul {
+        transform: scale(1, 1);
+    }
+
+    #subnav-toggle:checked~ul a {
+        opacity: 1;
+        transition: opacity 250ms ease-in-out 250ms;
+    }
+
+    ul.nav-sublist li {
+        margin-left: 0;
+        padding: 0.4em;
+        margin-top: 0.4em;
+        margin-bottom: 0.6em;
+    }
+
+    /* footer styles */
+    footer {
+        display: grid;
+        grid-template-columns: minmax(max-content, 2fr) minmax(auto, 1fr);
+        grid-template-rows: 1fr 1fr;
+        align-items: center;
+        grid-template-areas:
+            "address aside"
+            "info info";
+        row-gap: 2em;
+    }
+
+    footer address {
+        display: flex;
+        grid-area: address;
+        align-items: center;
+    }
+
+    footer aside {
+        display: flex;
+        grid-area: aside;
+        align-items: center;
+    }
+
+    .footerinfo {
+        grid-area: info;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    footer ul {
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    footer p:first-of-type {
+        margin-top: 0.4em;
+    }
+
+    footer a:hover {
+        text-decoration: underline var(--clr-alowisgray) 2px;
+    }
+
+    /* inschrijving styles */
+    .inschrijvingform {
+        height: 1500px;
+        width: 100%;
+    }
+
+    /* takken styles */
+    .tak {
+        display: grid;
+        text-align: center;
+        column-gap: 2em;
+        align-items: center;
+        justify-items: center;
+        grid-template-areas:
+            "titel      titel"
+            "logo       leiding"
+            "beschr      leiding"
+            "alowiske   alowiske";
+    }
+
+    .tak section {
+        width: 100%;
+    }
+
+    .titelsection {
+        grid-area: titel;
+    }
+
+    .logosection {
+        grid-area: logo;
+    }
+
+    .beschrijvingsection {
+        grid-area: beschr;
+        max-width: 30vw;
+        font-size: 1.5vw;
+    }
+
+    .alowiskesection {
+        grid-area: alowiske;
+    }
+
+    .leidingsection {
+        grid-area: leiding;
+    }
+
+    .taklogo,
+    .takleiding {
+        max-width: 50vw;
+    }
+
+    .alowiske {
+        max-width: 60vw;
+    }
+}
+
+@media screen and (min-width: 1100px) {
+
+    /* inschrijving styles */
+    .inschrijvingform {
+        height: 1350px;
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 1250px) {
+
+    /* inschrijving styles */
+    .inschrijvingform {
+        height: 1200px;
+        width: 100%;
+    }
+}
