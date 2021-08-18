@@ -1,0 +1,42 @@
+---
+layout: 'base.njk'
+---
+
+<article class="tak">
+    <section class="titelsection">
+        <h1>{{ title }}</h1>
+    </section>
+    <section class="logosection">
+        <h2>Geboren <span id="geboortestart">...</span>-<span id="geboorteeind">...</span></h2>
+        <img class="taklogo" src="/assets/{{ naam }}/logo.jpg" alt="logo {{ naam }}">
+    </section>
+
+    <section class="beschrijvingsection tekstblok">
+        {{ content | safe }}
+    </section>
+    
+    <section class="alowiskesection">
+        <h2>Alowiske</h2>
+        <iframe
+            src="{{ drivelink }}"
+            class="alowiske"
+            allow="autoplay">
+        </iframe>
+    </section>
+    
+    <section class="leidingsection">
+        <h2>Leiding</h2>
+        <img class="takleiding" src="/assets/{{ title }}/leiding.jpg" alt="leiding {{ naam }}">
+        {% for leider in leiding | list %}
+            <p>{{ leider }}</p>
+        {% endfor %}
+        <a href="mailto:{{ naam }}.alowis@hotmail.com" class="email"><i class="fai fas fa-envelope"></i>{{ naam }}.alowis&commat;hotmail.com</a>
+    </section>
+</article>
+<script>
+    const vandaag = new Date();
+    const naEenAugustus = vandaag > new Date(vandaag.getFullYear(), 07, 1) ? 1 : 0;
+    const jaar = vandaag.getFullYear() + naEenAugustus - 1;
+    document.getElementById("geboortestart").innerHTML = jaar - {{ geboortestart }};
+    document.getElementById("geboorteeind").innerHTML = jaar - {{ geboorteeind }};
+</script>

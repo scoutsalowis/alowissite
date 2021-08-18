@@ -18,3 +18,17 @@ collections:
       - { label: "Featured Image", name: "image", widget: "image" }
       - { label: "Image caption", name: "imageAlt", widget: "string" }
       - { label: "Body", name: "body", widget: "markdown" }
+  - name: "takken"
+    label: "Takken"
+    folder: "src/takken"
+    create: true
+    slug: "{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Naam", name: "naam", widget: "string" }
+      - { label: "Drive Link", name: "drivelink", widget: "string" }
+      - { label: "Leiding", name: "leiding", widget: "list" }
+      - { label: "Tags", name: "tags", widget: "list", default: ["tak"] }
+      - { label: "Geboorte Start", name: "geboortestart", widget: "string" }
+      - { label: "Geboorte Eind", name: "geboorteeind", widget: "string" }
+      - { label: "Beschrijving", name: "body", widget: "markdown" }
