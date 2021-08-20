@@ -219,13 +219,28 @@ img.banner {
     margin-left: auto;
     margin-right: auto;
     font-size: 0.80rem;
+    border-collapse: collapse;
 }
 
 td,
 th {
     padding: 8px;
+    border:  1px solid black;
+}
+
+td {
     text-align: left;
-    border-width: 0 1px 1px 0;
+}
+
+th {
+    text-align: right;
+    text-transform: uppercase;
+}
+
+thead th, tfoot td {
+    text-align: center;
+    font-weight: bold;
+    text-transform: uppercase;
 }
 
 /* contact styles */
