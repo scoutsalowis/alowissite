@@ -5,7 +5,7 @@
     --clr-alowisbrown-transparent: hsla(37, 37%, 76%, 0.9);
 
     /* main background */
-    --clr-primary: var(white);
+    --clr-primary: white;
     /* header/footer background */
     --clr-accent: var(--clr-alowisbrown);
     --clr-text: black;
@@ -49,6 +49,13 @@ main {
     margin-left: 1em;
     margin-right: 1em;
     margin-bottom: 2em;
+    display: flex;
+    flex-direction: column;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
 }
 
 footer {
@@ -67,8 +74,12 @@ ul {
     font-style: normal;
 }
 
-.tekstblok {
-    text-align: justify;
+main p,
+main h1,
+main h2 {
+    text-align: center;
+    margin-left: 2em;
+    margin-right: 2em;
 }
 
 h1 {
@@ -225,7 +236,7 @@ img.banner {
 td,
 th {
     padding: 8px;
-    border:  1px solid black;
+    border: 1px solid black;
 }
 
 td {
@@ -237,7 +248,8 @@ th {
     text-transform: uppercase;
 }
 
-thead th, tfoot td {
+thead th,
+tfoot td {
     text-align: center;
     font-weight: bold;
     text-transform: uppercase;
@@ -254,6 +266,11 @@ thead th, tfoot td {
     max-width: 100%;
     width: 500px;
     height: 500px;
+}
+
+iframe {
+    margin-left: auto !important;
+    margin-right: auto !important;
 }
 
 /* takken styles */
@@ -278,8 +295,26 @@ thead th, tfoot td {
 /* desktop styles */
 @media screen and (min-width: 800px) {
 
+    /* inschrijving styles */
+    .inschrijvingform {
+        height: 1500px;
+        width: 100%;
+    }
+}
+
+
+@media screen and (min-width: 1000px) {
+
     main {
         margin-top: 1em;
+    }
+
+    main p,
+    main h1,
+    main h2 {
+        text-align: justify;
+        margin-left: 4em;
+        margin-right: 4em;
     }
 
     /* header styles */
@@ -435,7 +470,7 @@ thead th, tfoot td {
 
     /* inschrijving styles */
     .inschrijvingform {
-        height: 1500px;
+        height: 1300px;
         width: 100%;
     }
 
@@ -504,5 +539,30 @@ thead th, tfoot td {
     .inschrijvingform {
         height: 1200px;
         width: 100%;
+    }
+
+    /* contact styles */
+    .contact {
+        display: grid;
+        text-align: center;
+        column-gap: 2em;
+        align-items: start;
+        align-content: start;
+        grid-template-rows: auto 1fr;
+        grid-template-areas:
+            "locatie    socials"
+            "email      socials";
+    }
+
+    .locatie {
+        grid-area: locatie;
+    }
+
+    .email {
+        grid-area: email;
+    }
+
+    .socials {
+        grid-area: socials;
     }
 }
