@@ -1,14 +1,13 @@
 :root {
-    --clr-alowisgray: hsla(0, 0%, 58%);
-    --clr-alowisred: hsla(5, 80%, 54%);
-    --clr-alowisbrown: hsla(37, 37%, 76%);
-    --clr-alowisbrown-transparent: hsla(37, 37%, 76%, 0.9);
+    --clr-alowisgray: 0, 0%, 58%;
+    --clr-alowisred: 5, 80%, 54%;
+    --clr-alowisbrown: 37, 37%, 76%;
 
     /* main background */
-    --clr-primary: white;
+    --clr-primary: 0, 0%, 100%;
     /* header/footer background */
     --clr-accent: var(--clr-alowisbrown);
-    --clr-text: black;
+    --clr-text: 0, 0%, 0%;
 }
 
 *,
@@ -19,8 +18,8 @@
 
 /* Hoofd achtergrond kleur en tekstkleur van de site */
 html {
-    background-color: var(--clr-primary);
-    color: var(--clr-text);
+    background-color: hsla(var(--clr-primary));
+    color: hsla(var(--clr-text));
     height: 100%;
     font-family: 'Noto Sans KR', sans-serif;
 }
@@ -37,7 +36,7 @@ body {
 
 header {
     width: 100%;
-    background-color: var(--clr-alowisbrown-transparent);
+    background-color: hsla(var(--clr-accent), 0.9);
     position: fixed;
     z-index: 999;
     text-align: center;
@@ -59,7 +58,7 @@ section {
 }
 
 footer {
-    background-color: var(--clr-accent);
+    background-color: hsla(var(--clr-accent));
     text-align: center;
     margin-top: auto;
     padding: 1em;
@@ -103,7 +102,7 @@ nav {
     width: 100%;
     top: 100%;
     left: 0;
-    background-color: var(--clr-alowisbrown-transparent);
+    background-color: hsla(var(--clr-accent), 0.9);
     transform: scale(1, 0);
     transform-origin: top;
     transition: transform 400ms ease-in-out;
@@ -162,7 +161,7 @@ nav a,
 .nav-toggle-label span::before,
 .nav-toggle-label span::after {
     display: block;
-    background-color: var(--clr-text);
+    background-color: hsla(var(--clr-text));
     height: 2px;
     width: 2em;
     border-radius: 2px;
@@ -187,7 +186,7 @@ nav a,
 footer a {
     display: block;
     text-decoration: none;
-    color: var(--clr-alowisred);
+    color: hsla(var(--clr-alowisred));
     margin: 0.4em;
     width: 100%;
 }
@@ -206,7 +205,7 @@ footer p:first-of-type {
 }
 
 footer .fai {
-    color: var(--clr-alowisred);
+    color: hsla(var(--clr-alowisred));
 }
 
 /* banner */
@@ -319,7 +318,7 @@ iframe {
 
     /* header styles */
     header {
-        background-color: var(--clr-accent);
+        background-color: hsla(var(--clr-accent));
         position: static;
         display: grid;
         grid-template-columns: 1fr auto minmax(680px, 3fr) 1fr;
@@ -371,7 +370,7 @@ iframe {
         content: '';
         display: block;
         height: 5px;
-        background: linear-gradient(120deg, var(--clr-alowisred) 50%, var(--clr-alowisgray) 50%);
+        background: linear-gradient(120deg, hsla(var(--clr-alowisred)) 50%, hsla(var(--clr-alowisgray)) 50%);
         position: absolute;
         bottom: -.60em;
         left: 0;
@@ -392,7 +391,7 @@ iframe {
         flex-direction: column;
         text-align: left;
         margin-left: 0;
-        background-color: var(--clr-accent);
+        background-color: hsla(var(--clr-accent));
         border-radius: 0px 0px 15px 15px;
 
         transform: scale(1, 0);
@@ -465,7 +464,7 @@ iframe {
     }
 
     footer a:hover {
-        text-decoration: underline var(--clr-alowisgray) 2px;
+        text-decoration: underline hsla(var(--clr-alowisgray)) 2px;
     }
 
     /* inschrijving styles */
