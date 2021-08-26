@@ -38,7 +38,7 @@ body {
 
 header {
     width: 100%;
-    background-color: hsla(var(--clr-accent), 0.9);
+    background-color: hsla(var(--clr-accent));
     position: fixed;
     z-index: 999;
     text-align: center;
@@ -81,7 +81,8 @@ header ul, footer ul {
 
 main p,
 main h1,
-main h2 {
+main h2,
+main h3 {
     text-align: center;
     margin-left: 2em;
     margin-right: 2em;
@@ -93,6 +94,13 @@ h1 {
 
 h2 {
     font-size: 1.5rem;
+}
+
+h3 {
+    font-size: 1.1rem;
+    margin-bottom: 0;
+    font-weight: unset;
+    text-decoration: underline;
 }
 
 small, footer .author {
@@ -112,20 +120,21 @@ nav {
     width: 100%;
     top: 100%;
     left: 0;
+    
     background-color: hsla(var(--clr-accent), 0.9);
+    backdrop-filter: blur(3px);
+
     transform: scale(1, 0);
     transform-origin: top;
     transition: transform 400ms ease-in-out;
+
+    overflow-y: scroll;
+    max-height: 70vh;
 }
 
 nav li {
     margin-bottom: 1em;
     margin-left: 1em;
-}
-
-nav {
-    overflow-y: scroll;
-    max-height: 70vh;
 }
 
 .nav-sublist {
@@ -363,14 +372,27 @@ iframe {
 
     nav ul {
         display: flex;
-        justify-content: center;
+        align-items: center;
+        height: 100%;
     }
 
     nav li {
+        display: flex;
+        align-items: center;
         min-width: fit-content;
-        margin-left: 1.5em;
-        margin-right: 1.5em;
-        margin-bottom: 0;
+        margin: 0;
+        height: 100%;
+        width: 100%;
+    }
+
+    nav a,
+    #takken {
+        display: flex;
+        align-items: center;
+        height: 100%;
+        width: 100%;
+        padding-left: 1.5em;
+        padding-right: 1.5em;
     }
 
     nav a,
@@ -384,10 +406,11 @@ iframe {
         content: '';
         display: block;
         height: 5px;
+        width: calc(100% - 3em);
         background: linear-gradient(120deg, hsla(var(--clr-alowisred)) 50%, hsla(var(--clr-alowisgray)) 50%);
         position: absolute;
-        bottom: -.60em;
-        left: 0;
+        bottom: 1.4em;
+        left: 1.5em;
         right: 0;
         border-radius: 2px;
         transform: scale(0, 1);
@@ -400,8 +423,13 @@ iframe {
     }
 
     /* sublist styles */
-    ul.nav-sublist {
+
+
+    .nav-sublist {
         position: absolute;
+        top: 4em;
+        height: unset;
+        align-items: flex-start;
         flex-direction: column;
         text-align: left;
         margin-left: 0;
@@ -413,25 +441,37 @@ iframe {
         transition: transform 400ms ease-in-out;
     }
 
-    ul.nav-sublist a {
+    .nav-sublist a {
         opacity: 0;
         transition: opacity 150ms ease-in-out;
+        padding-top: 0.8em;
+        padding-bottom: 0.8em;
     }
 
-    #subnav-toggle:checked~ul {
+    .nav-sublist a::before, .nav-sublist a:hover::before {
+        all: unset;
+    }
+
+    .nav-sublist a:hover {
+        background: linear-gradient(120deg, hsla(var(--clr-alowisred)) 50%, hsla(var(--clr-alowisgray)) 50%);
+        border-radius: 15px;
+        color: hsla(var(--clr-primary));
+        text-shadow: 1px 1px hsla(var(--clr-text));
+    }
+
+    /* #subnav-toggle:checked~ul {
+        transform: scale(1, 1);
+    } */
+
+    #takken:hover~ul,
+    .nav-sublist:hover {
         transform: scale(1, 1);
     }
 
-    #subnav-toggle:checked~ul a {
+    #takken:hover~ul a,
+    .nav-sublist:hover a{
         opacity: 1;
         transition: opacity 250ms ease-in-out 250ms;
-    }
-
-    ul.nav-sublist li {
-        margin-left: 0;
-        padding: 0.4em;
-        margin-top: 0.4em;
-        margin-bottom: 0.6em;
     }
 
     /* footer styles */
