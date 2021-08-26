@@ -68,7 +68,11 @@ footer {
     flex-direction: column;
 }
 
-ul {
+li {
+    margin-bottom: 0.5em;
+}
+
+header ul, footer ul {
     list-style: none;
     padding: 0;
     margin: 0;
@@ -214,13 +218,14 @@ footer .fai {
     color: hsla(var(--clr-alowisred));
 }
 
-/* banner */
-img.banner {
+/* afbeeldingen */
+main img {
     display: block;
     margin-left: auto;
     margin-right: auto;
     width: 100%;
     max-width: 800px;
+    border-radius: 12px;
 }
 
 /* inschrijving styles */
@@ -315,8 +320,10 @@ iframe {
     }
 
     main p,
+    main ul,
     main h1,
-    main h2 {
+    main h2,
+    main h3 {
         text-align: justify;
         margin-left: 4em;
         margin-right: 4em;
@@ -327,7 +334,7 @@ iframe {
         background-color: hsla(var(--clr-accent));
         position: static;
         display: grid;
-        grid-template-columns: 1fr auto minmax(680px, 3fr) 1fr;
+        grid-template-columns: 1fr auto minmax(max-content, 3fr) 1fr;
     }
 
     .logo {
@@ -361,7 +368,8 @@ iframe {
 
     nav li {
         min-width: fit-content;
-        margin-left: 3em;
+        margin-left: 1.5em;
+        margin-right: 1.5em;
         margin-bottom: 0;
     }
 
