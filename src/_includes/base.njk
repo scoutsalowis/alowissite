@@ -18,11 +18,15 @@
     </head>
 
     <body>
-        {% include 'header.njk' %}
+        <header>
+            {% include 'header.njk' %}
+        </header>
         <main>
             {{ content | safe }}
         </main>
-        {% include 'footer.njk' %}
+        <footer>
+            {% include 'footer.njk' %}
+        </footer>
         <script>
             document.getElementById("year").innerHTML = new Date().getFullYear();
         </script>
@@ -37,5 +41,6 @@
                 });
             }
         </script>
+         <script src="/js/main.js"></script>
     </body>
 </html>

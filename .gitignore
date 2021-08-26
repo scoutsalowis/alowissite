@@ -4,12 +4,5 @@ node_modules
 # build artefacts
 public
 
-# secrets and errors
-.env
-.log
-
-# macOS related files
-.DS_Store
-
 # vs code files
 .vscode
