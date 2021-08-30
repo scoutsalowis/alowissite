@@ -2,8 +2,8 @@
 
 :root {
     --clr-alowisgray: 0, 0%, 58%;
-    --clr-alowisred: 5, 80%, 54%;
-    --clr-alowisbrown: 37, 37%, 76%;
+    --clr-alowisred: 5, 80%, 35%;
+    --clr-alowisbrown: 37, 37%, 85%;
 
     /* main background */
     --clr-primary: 0, 0%, 100%;
@@ -143,6 +143,8 @@ main img {
     display: block;
     margin-left: auto;
     margin-right: auto;
+    width: auto;
+    height: auto;
     max-height: 60vh;
     max-width: 100%;
     border-radius: 12px;
