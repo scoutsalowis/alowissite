@@ -18,12 +18,18 @@
     box-sizing: border-box;
 }
 
+::selection {
+    background: hsla(var(--clr-alowisred));
+    color: hsla(var(--clr-primary));
+}
+
 /* Hoofd achtergrond kleur en tekstkleur van de site */
 html {
     background-color: hsla(var(--clr-primary));
     color: hsla(var(--clr-text));
     height: 100%;
     font-family: 'Noto Sans KR', sans-serif;
+    line-height: 2rem;
 }
 
 body {
@@ -52,6 +58,11 @@ main {
     margin-bottom: 2em;
     display: flex;
     flex-direction: column;
+    text-align: center;
+}
+
+article {
+    text-align: center;
 }
 
 section {
@@ -68,6 +79,10 @@ footer {
     flex-direction: column;
 }
 
+main ul {
+    text-align: initial;
+}
+
 li {
     margin-bottom: 0.5em;
 }
@@ -80,10 +95,7 @@ header ul, footer ul {
 }
 
 main p,
-main h1,
-main h2,
-main h3 {
-    text-align: center;
+main strong {
     margin-left: 2em;
     margin-right: 2em;
 }
@@ -100,11 +112,40 @@ h3 {
     font-size: 1.1rem;
     margin-bottom: 0;
     font-weight: unset;
-    text-decoration: underline;
+    font-style: italic;
+    color: hsla(var(--clr-alowisgray));
 }
 
 small, footer .author {
-    font-size: 0.7em;
+    font-size: 0.7rem;
+}
+
+/* strong styles */
+strong::before {
+    content: "⚠ ";
+}
+
+strong::after {
+    content: "!";
+}
+
+/* font awsome icons */
+.fai {
+    margin-right: 0.2em;
+}
+
+footer .fai {
+    color: hsla(var(--clr-alowisred));
+}
+
+/* afbeeldingen */
+main img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-height: 60vh;
+    max-width: 100%;
+    border-radius: 12px;
 }
 
 /* header styles */
@@ -217,25 +258,6 @@ footer p:first-of-type {
     margin-top: 2em;
 }
 
-/* font awsome icons */
-.fai {
-    margin-right: 0.2em;
-}
-
-footer .fai {
-    color: hsla(var(--clr-alowisred));
-}
-
-/* afbeeldingen */
-main img {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 100%;
-    max-width: 800px;
-    border-radius: 12px;
-}
-
 /* inschrijving styles */
 .inschrijvingform {
     height: 2050px;
@@ -273,6 +295,10 @@ tfoot td {
     text-transform: uppercase;
 }
 
+.verhuurkalender {
+    max-width: 800px;
+}
+
 /* contact styles */
 .googlemaps {
     max-width: 100%;
@@ -292,22 +318,33 @@ iframe {
 }
 
 /* takken styles */
+.tak-snippet {
+    text-decoration: none;
+    color: hsla(var(--clr-text));
+    
+    max-width: 80%;
+    margin-bottom: 1em;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* tak styles */
 .alowiske {
     aspect-ratio: 1/1.4142;
+    height: min(100%, 60vh);
 }
+
 
 .takleiding {
     border-radius: 40px;
 }
 
-.taklogo,
-.takleiding,
-.alowiske {
+.logosection,
+.leidingsection {
     display: block;
     margin-left: auto;
     margin-right: auto;
     width: 100%;
-    max-width: 500px;
 }
 
 /* desktop styles */
@@ -317,6 +354,19 @@ iframe {
     .inschrijvingform {
         height: 1500px;
         width: 100%;
+    }
+
+    /* takken styles */
+
+    .tak_selectie p {
+        margin-left: 0;
+        margin-right: 0;
+        text-align: center;
+    }
+
+    .tak_selectie {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
     }
 }
 
@@ -330,7 +380,6 @@ iframe {
     main p,
     main ul,
     main h1,
-    main h2,
     main h3 {
         text-align: justify;
         margin-left: 4em;
@@ -422,11 +471,9 @@ iframe {
     }
 
     /* sublist styles */
-
-
     .nav-sublist {
         position: absolute;
-        top: 4em;
+        top: 4.5em;
         height: unset;
         align-items: flex-start;
         flex-direction: column;
@@ -457,10 +504,6 @@ iframe {
         color: hsla(var(--clr-primary));
         text-shadow: 1px 1px hsla(var(--clr-text));
     }
-
-    /* #subnav-toggle:checked~ul {
-        transform: scale(1, 1);
-    } */
 
     #takken:hover~ul,
     .nav-sublist:hover {
@@ -540,12 +583,11 @@ iframe {
         width: 100%;
     }
 
-    /* takken styles */
+    /* tak styles */
     .tak {
         display: grid;
         text-align: center;
         column-gap: 2em;
-        align-items: center;
         justify-items: center;
         grid-template-areas:
             "titel      titel"
@@ -571,6 +613,11 @@ iframe {
         max-width: 30vw;
         font-size: 1.5vw;
     }
+    
+    .beschrijvingsection p {
+        margin-left: 0;
+        margin-right: 0;
+    }
 
     .alowiskesection {
         grid-area: alowiske;
@@ -580,12 +627,18 @@ iframe {
         grid-area: leiding;
     }
 
+    .leidingsection p {
+        text-align: center;
+    }
+
     .taklogo,
     .takleiding {
         max-width: 50vw;
     }
 
     .alowiske {
+        height: auto;
+        width: 80%;
         max-width: 60vw;
     }
 }

@@ -8,7 +8,9 @@ layout: 'base.njk'
     </section>
     <section class="logosection">
         <h2>Geboren <span id="geboortestart">...</span>-<span id="geboorteeind">...</span></h2>
-        <img class="taklogo" src="/assets/{{ naam }}/logo.jpg" alt="logo {{ naam }}">
+        <div class="img_container">
+            <img class="taklogo" src="/assets/{{ naam }}/logo.png" alt="logo {{ naam }}">
+        </div>
     </section>
 
     <section class="beschrijvingsection">
@@ -26,7 +28,9 @@ layout: 'base.njk'
     
     <section class="leidingsection">
         <h2>Leiding</h2>
-        <img class="takleiding" src="/assets/{{ title }}/leiding.jpg" alt="leiding {{ naam }}">
+        <div class="img_container">
+            <img class="takleiding" src="/assets/{{ title }}/leiding.jpg" alt="leiding {{ naam }}">
+        </div>
         {% for leider in leiding | list %}
             <p>{{ leider }}</p>
         {% endfor %}
