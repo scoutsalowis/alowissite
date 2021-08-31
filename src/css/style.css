@@ -7,9 +7,11 @@
 
     /* main background */
     --clr-primary: 0, 0%, 100%;
+
     /* header/footer background */
     --clr-accent: var(--clr-alowisbrown);
     --clr-text: 0, 0%, 0%;
+    --clr-strong: 54, 77%, 74%;
 }
 
 *,
@@ -121,12 +123,17 @@ small, footer .author {
 }
 
 /* strong styles */
-strong::before {
-    content: "⚠ ";
+strong {
+    background: hsla(var(--clr-strong));
+    border-radius: 12px;
 }
 
-strong::after {
-    content: "!";
+strong::before {
+    font-family: "Font Awesome 5 Free";
+    color: hsla(var(--clr-alowisred));
+    content: "\f071";
+    margin-right: 0.2em;
+
 }
 
 /* font awsome icons */
@@ -136,6 +143,31 @@ strong::after {
 
 footer .fai {
     color: hsla(var(--clr-alowisred));
+}
+
+/* copy on click tooltip styles */
+.copyclick {
+    position: relative;
+}
+
+.copyclick::before {
+    content: "tekst is gekopieerd";
+    position: absolute;
+
+    background: hsla(var(--clr-strong));
+
+    width: calc(100% - 3em);
+    top: 2rem;
+    left: 1.5em;
+    border-radius: 12px;
+    
+    opacity: 0;
+    transition: opacity 800ms cubic-bezier(0.4, 0, 1, 1) 1500ms; 
+}
+
+.copyclick:active::before {
+    opacity: 1;
+    transition: opacity 1ms;    
 }
 
 /* afbeeldingen */
@@ -272,6 +304,7 @@ footer p:first-of-type {
 /* verhuur styles */
 .verhuurtabel {
     width: 90%;
+    margin-top: 1em;
     margin-left: auto;
     margin-right: auto;
     font-size: 0.80rem;
