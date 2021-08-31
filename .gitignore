@@ -4,5 +4,8 @@ node_modules
 # build artefacts
 public
 
+# original image files
+.original_images
+
 # vs code files
 .vscode

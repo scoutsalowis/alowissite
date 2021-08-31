@@ -1,7 +1,7 @@
 @import url("normalize.css");
 
 :root {
-    --clr-alowisgray: 0, 0%, 58%;
+    --clr-alowisgray: 0, 0%, 35%;
     --clr-alowisred: 5, 80%, 35%;
     --clr-alowisbrown: 37, 37%, 85%;
 
@@ -111,7 +111,7 @@ h2 {
 h3 {
     font-size: 1.1rem;
     margin-bottom: 0;
-    font-weight: unset;
+    font-weight: bold;
     font-style: italic;
     color: hsla(var(--clr-alowisgray));
 }
@@ -139,12 +139,15 @@ footer .fai {
 }
 
 /* afbeeldingen */
+img {
+    width: auto;
+    height: auto;
+}
+
 main img {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: auto;
-    height: auto;
     max-height: 60vh;
     max-width: 100%;
     border-radius: 12px;
@@ -613,7 +616,7 @@ iframe {
     .beschrijvingsection {
         grid-area: beschr;
         max-width: 30vw;
-        font-size: 1.5vw;
+        font-size: 1.2rem;
     }
     
     .beschrijvingsection p {
@@ -627,6 +630,7 @@ iframe {
 
     .leidingsection {
         grid-area: leiding;
+        font-size: 1rem;
     }
 
     .leidingsection p {

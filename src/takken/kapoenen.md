@@ -1,6 +1,5 @@
 ---
-title : Kapoenen
-naam : kapoenen
+title : kapoenen
 drivelink : https://drive.google.com/file/d/1zBF3diAO_U8DvhRZ4DtofHMDTSiAbQnm/preview
 leiding : [
             "Joshua (Dankbare Labrador)"

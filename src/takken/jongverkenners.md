@@ -1,6 +1,5 @@
 ---
-title : Jongverkenners
-naam : jongverkenners
+title : jongverkenners
 drivelink : https://drive.google.com/file/d/1zBF3diAO_U8DvhRZ4DtofHMDTSiAbQnm/preview
 leiding : [
             "Cedric (Zilverblauwe Genietende Bergbever)"

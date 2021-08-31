@@ -1,6 +1,5 @@
 ---
-title : Jins
-naam : jins
+title : jins
 drivelink : https://drive.google.com/file/d/1zBF3diAO_U8DvhRZ4DtofHMDTSiAbQnm/preview
 leiding : [
             "Daan (Oceaanblauwe Dartele Suricata)"

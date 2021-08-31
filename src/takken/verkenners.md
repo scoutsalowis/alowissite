@@ -1,6 +1,5 @@
 ---
-title : Verkenners
-naam : verkenners
+title : verkenners
 drivelink : https://drive.google.com/file/d/1zBF3diAO_U8DvhRZ4DtofHMDTSiAbQnm/preview
 leiding : [
             "Brecht (Avocadogroene Afwachtende Specht)"
