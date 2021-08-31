@@ -96,10 +96,9 @@ header ul, footer ul {
     font-style: normal;
 }
 
-main p,
-main strong {
-    margin-left: 2em;
-    margin-right: 2em;
+main p {
+    margin-left: 0.75em;
+    margin-right: 0.75em;
 }
 
 h1 {
@@ -124,6 +123,11 @@ small, footer .author {
 
 /* strong styles */
 strong {
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 2em;
+    padding-right: 2em;
+    width: fit-content;
     background: hsla(var(--clr-strong));
     border-radius: 12px;
 }
