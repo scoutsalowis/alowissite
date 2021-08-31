@@ -2,9 +2,6 @@ function copyElementText(element)
 {
      /* Copy the text inside the element */
     navigator.clipboard.writeText(element.innerText);
-  
-    /* Alert the copied text */
-    
 }
 
 const init = function ()

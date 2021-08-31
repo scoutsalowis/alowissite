@@ -153,21 +153,24 @@ footer .fai {
 .copyclick::before {
     content: "tekst is gekopieerd";
     position: absolute;
+    text-align: center;
+    z-index: 2;
 
     background: hsla(var(--clr-strong));
 
-    width: calc(100% - 3em);
+    width: 10rem;
     top: 2rem;
-    left: 1.5em;
+    left: calc(50% - 5rem);
     border-radius: 12px;
     
-    opacity: 0;
-    transition: opacity 800ms cubic-bezier(0.4, 0, 1, 1) 1500ms; 
+    transform-origin: top;
+    transform: scale(0, 0);
+    transition: transform 400ms cubic-bezier(0.4, 0, 1, 1) 1500ms; 
 }
 
 .copyclick:active::before {
-    opacity: 1;
-    transition: opacity 1ms;    
+    transform: scale(1, 1);
+    transition: transform 1ms;    
 }
 
 /* afbeeldingen */
