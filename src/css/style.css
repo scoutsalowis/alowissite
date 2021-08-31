@@ -393,6 +393,11 @@ iframe {
     width: 100%;
 }
 
+/* 404 styles */
+.page_not_found p{
+    text-align: center;
+}
+
 /* desktop styles */
 @media screen and (min-width: 800px) {
 
