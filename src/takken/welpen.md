@@ -6,11 +6,11 @@ leiding: [
             , "Ben (Populierblauwe Nijverige Moeflon)"
             , "Senne (Grafietgrijze Doordachte Wapiti)"
           ]
-geboortestart: 10
+geboortestart: 11
 geboorteeind: 8
 ---
 
-Wie tussen 8 en 10 jaar is, kan meespelen bij de welpen.
+Wie tussen 8 en 11 jaar is, kan meespelen bij de welpen.
 Het is typisch voor welpen dat ze zelf dingen leren doen.
 Ze krijgen ruimte en kansen om dingen uit te proberen en van elkaar te leren.
 De werking wordt ingekleed met verhalen en fantasie.

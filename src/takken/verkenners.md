@@ -5,10 +5,10 @@ leiding : [
             "Brecht (Avocadogroene Afwachtende Specht)"
             , "Samuel (Diepzeegroene Verrassende Raccoon)"
           ]
-geboortestart : 16
+geboortestart : 14
 geboorteeind : 14
 ---
 
-Bij de verkenners (14–16 jaar) is er ruimte voor grotere projecten.
+Bij de verkenners (14–17 jaar) is er ruimte voor grotere projecten.
 Met de groep een snuifje avontuur realiseren, of uitgedaagd worden door elkaar.
 Vanuit eigen interesses op zoek gaan naar zichzelf tussen soortgenoten.

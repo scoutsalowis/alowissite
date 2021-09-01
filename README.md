@@ -4,4 +4,4 @@ Dit is de github repo die alle source files bevat voor [de site van Alowis](http
 
 ## Tutorial
 
-Dit project is gebaseerd op [deze video tutorial](https://youtu.be/4wD00RT6d-g) van Kevin Powell. Dit project gebruikt Eleventy, Netlify, and Netlify CMS.
+Dit project is gebaseerd op [deze video tutorial](https://youtu.be/4wD00RT6d-g) van Kevin Powell. Dit project gebruikt Eleventy, Netlify, en Netlify CMS.

@@ -14,6 +14,32 @@
     --clr-strong: 54, 77%, 74%;
 }
 
+/* darktheme */
+/* @media (prefers-color-scheme: dark) {
+    :root {
+        --clr-primary: 0, 0%, 0%;
+        --clr-text: 0, 0%, 100%;
+
+        --clr-alowisgray: 0, 0%, 55%;
+        --clr-alowisred: 0, 100%, 62%;
+        --clr-alowisbrown: 31, 88%, 11%;
+
+        --clr-strong: 54, 76%, 20%;
+    }
+
+    @media screen and (min-width: 1000px){
+        ul.nav-sublist a:hover {
+            color: hsla(var(--clr-text));
+            text-shadow: 1px 1px hsla(var(--clr-primary));
+        }
+    }
+
+    .inschrijvingform {
+        background-color: hsla(var(--clr-text));
+        border-radius: 15px;
+    }
+} */
+
 *,
 *::before,
 *::after {
@@ -119,6 +145,10 @@ h3 {
 
 small, footer .author {
     font-size: 0.7rem;
+}
+
+a {
+    color: hsla(var(--clr-alowisred));
 }
 
 /* strong styles */
@@ -305,6 +335,7 @@ footer p:first-of-type {
 
 /* inschrijving styles */
 .inschrijvingform {
+    margin-top: 1em;
     height: 2050px;
     width: 100%;
 }
@@ -322,7 +353,7 @@ footer p:first-of-type {
 td,
 th {
     padding: 8px;
-    border: 1px solid black;
+    border: 1px solid hsla(var(--clr-text));
 }
 
 td {

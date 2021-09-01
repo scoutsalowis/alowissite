@@ -7,7 +7,7 @@ layout: 'base.njk'
         <h1>{{ title | capitalize }}</h1>
     </section>
     <section class="logosection">
-        <h2>Geboren <span id="geboortestart">...</span>-<span id="geboorteeind">...</span></h2>
+        <h2>Geboren <span id="leeftijd">...</span></h2>
         <div class="img_container">
             <img class="taklogo" src="/assets/{{ title }}/logo/logo_140.webp" alt="logo {{ title }}"
                  width="140" height="240"
@@ -55,6 +55,10 @@ layout: 'base.njk'
     const vandaag = new Date();
     const naEenAugustus = vandaag > new Date(vandaag.getFullYear(), 07, 1) ? 1 : 0;
     const jaar = vandaag.getFullYear() + naEenAugustus - 1;
-    document.getElementById("geboortestart").innerHTML = jaar - {{ geboortestart }};
-    document.getElementById("geboorteeind").innerHTML = jaar - {{ geboorteeind }};
+    const start = jaar - {{ geboortestart }} + 1;
+    const eind = jaar - {{ geboorteeind }};
+
+    const leeftijd = start === eind ? `${start}` : `${start}-${eind}`;
+
+    document.getElementById("leeftijd").innerHTML = leeftijd;
 </script>
