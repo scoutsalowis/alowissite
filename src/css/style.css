@@ -191,6 +191,7 @@ footer .fai {
     position: absolute;
     text-align: center;
     z-index: 2;
+    pointer-events: none;
 
     background: hsla(var(--clr-strong));
 
