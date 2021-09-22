@@ -1,6 +1,6 @@
 ---
 title : jongverkenners
-drivelink : https://drive.google.com/file/d/1zBF3diAO_U8DvhRZ4DtofHMDTSiAbQnm/preview
+drivelink : https://drive.google.com/file/d/1J6iGEyDq__ZtFdQXceH8iFEn6aU61WEA/preview
 leiding : [
             "Cedric (Zilverblauwe Genietende Bergbever)"
             , "Joeri (Hemelroze Volgzame Panda)"
