@@ -13,7 +13,7 @@ layout: 'base.njk'
                  width="140" height="240"
                  srcset="/assets/{{ title }}/logo/logo.png?nf_resize=fit&w=140 140w,
                          /assets/{{ title }}/logo/logo.png?nf_resize=fit&w=280 280w,
-                         /assets/{{ title }}/logo//logo.png 560w"
+                         /assets/{{ title }}/logo//logo.png?nf_resize=fit&w=560 560w"
             >
         </div>
     </section>
@@ -40,7 +40,7 @@ layout: 'base.njk'
                  srcset="/assets/{{ title }}/leiding/leiding.jpg?nf_resize=fit&w=640 640w,
                          /assets/{{ title }}/leiding/leiding.jpg?nf_resize=fit&w=1024 1024w,
                          /assets/{{ title }}/leiding/leiding.jpg?nf_resize=fit&w=1920 1920w,
-                         /assets/{{ title }}/leiding/leiding.jpg 2675w"
+                         /assets/{{ title }}/leiding/leiding.jpg?nf_resize=fit&w=2675 2675w"
             >
         </div>
         {% for leider in leiding | list %}
