@@ -1,1 +1,1 @@
-src/assets/**.webp filter=lfs diff=lfs merge=lfs -text
+**.webp filter=lfs diff=lfs merge=lfs -text
