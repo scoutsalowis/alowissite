@@ -9,11 +9,11 @@ layout: 'base.njk'
     <section class="logosection">
         <h2>Geboren <span id="leeftijd">...</span></h2>
         <div class="img_container">
-            <img class="taklogo" src="/assets/{{ title }}/logo/logo_140.webp" alt="logo {{ title }}"
+            <img class="taklogo" src="/assets/{{ title }}/logo/logo.png?nf_resize=fit&w=140" alt="logo {{ title }}"
                  width="140" height="240"
-                 srcset="/assets/{{ title }}/logo/logo_140.webp 140w,
-                         /assets/{{ title }}/logo/logo_280.webp 280w,
-                         /assets/{{ title }}/logo/logo_560.webp 560w"
+                 srcset="/assets/{{ title }}/logo/logo.png?nf_resize=fit&w=140 140w,
+                         /assets/{{ title }}/logo/logo.png?nf_resize=fit&w=280 280w,
+                         /assets/{{ title }}/logo//logo.png 560w"
             >
         </div>
     </section>
@@ -35,12 +35,12 @@ layout: 'base.njk'
     <section class="leidingsection">
         <h2>Leiding</h2>
         <div class="img_container">
-            <img class="takleiding" src="/assets/{{ title }}/leiding/leiding_640.webp" alt="leiding {{ naam }}"
+            <img class="takleiding" src="/assets/{{ title }}/leiding/leiding.jpg?nf_resize=fit&w=640" alt="leiding {{ naam }}"
                  width="640" height="896"
-                 srcset="/assets/{{ title }}/leiding/leiding_640.webp 640w,
-                         /assets/{{ title }}/leiding/leiding_1024.webp 1024w,
-                         /assets/{{ title }}/leiding/leiding_1920.webp 1920w,
-                         /assets/{{ title }}/leiding/leiding_2675.webp 2675w"
+                 srcset="/assets/{{ title }}/leiding/leiding.jpg?nf_resize=fit&w=640 640w,
+                         /assets/{{ title }}/leiding/leiding.jpg?nf_resize=fit&w=1024 1024w,
+                         /assets/{{ title }}/leiding/leiding.jpg?nf_resize=fit&w=1920 1920w,
+                         /assets/{{ title }}/leiding/leiding.jpg 2675w"
             >
         </div>
         {% for leider in leiding | list %}
