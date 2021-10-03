@@ -5,6 +5,7 @@ leiding : [
             "Brecht (Avocadogroene Afwachtende Specht)"
             , "Samuel (Diepzeegroene Verrassende Raccoon)"
           ]
+email : vk.alowis@hotmail.com
 geboortestart : 14
 geboorteeind : 14
 ---

@@ -28,6 +28,7 @@ collections:
       - { label: "Naam", name: "naam", widget: "string" }
       - { label: "Drive Link", name: "drivelink", widget: "string" }
       - { label: "Leiding", name: "leiding", widget: "list" }
+      - { label: "Email", name: "email", widget: "string" }
       - { label: "Tags", name: "tags", widget: "list", default: ["tak"] }
       - { label: "Geboorte Start", name: "geboortestart", widget: "string" }
       - { label: "Geboorte Eind", name: "geboorteeind", widget: "string" }

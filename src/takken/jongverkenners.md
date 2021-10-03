@@ -5,7 +5,7 @@ leiding : [
             "Cedric (Zilverblauwe Genietende Bergbever)"
             , "Joeri (Hemelroze Volgzame Panda)"
             , "Boris (Vuurrode Intensieve Alpaca)"
-          ]
+          ]jongverkenners&commat;scoutsalowis.be
 geboortestart : 14
 geboorteeind : 11
 ---

@@ -6,6 +6,7 @@ leiding: [
             , "Ben (Populierblauwe Nijverige Moeflon)"
             , "Senne (Grafietgrijze Doordachte Wapiti)"
           ]
+email : welpen.alowis@hotmail.com
 geboortestart: 11
 geboorteeind: 8
 ---

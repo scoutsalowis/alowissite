@@ -6,6 +6,7 @@ leiding : [
             , "Robbe (Carambola Gele Pronkende Wasbeer)"
             , "Jonah (Tarpan)"
           ]
+email : kapoenen.alowis@hotmail.com
 geboortestart : 8
 geboorteeind : 6
 ---
