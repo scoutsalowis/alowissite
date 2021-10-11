@@ -417,7 +417,7 @@ iframe {
 /* tak styles */
 .alowiske {
     aspect-ratio: 1/1.4142;
-    height: min(100%, 60vh);
+    height: 60vh;
 }
 
 
