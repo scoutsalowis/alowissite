@@ -106,7 +106,6 @@ footer {
     padding: 1em;
     display: flex;
     flex-direction: column;
-    line-height: 1.3rem;
 }
 
 main ul {
@@ -335,6 +334,10 @@ footer p {
 
 footer p:first-of-type {
     margin-top: 2em;
+}
+
+.footerinfo {
+    line-height: 1.3rem;
 }
 
 /* inschrijving styles */
