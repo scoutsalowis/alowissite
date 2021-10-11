@@ -4,7 +4,7 @@ drivelink : https://drive.google.com/file/d/14Gw5dFM4IFp_qliqcVre_Bv9dW9SrNsK/pr
 leiding : [
             "Joshua (Dankbare Labrador)"
             , "Robbe (Carambola Gele Pronkende Wasbeer)"
-            , "Jonah (Tarpan)"
+            , "Jonah (Vurige Tarpan)"
           ]
 email : kapoenen.alowis@hotmail.com
 geboortestart : 8
