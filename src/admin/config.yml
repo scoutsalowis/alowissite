@@ -25,7 +25,6 @@ collections:
     slug: "{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
     fields:
       - { label: "Title", name: "title", widget: "string" }
-      - { label: "Naam", name: "naam", widget: "string" }
       - { label: "Drive Link", name: "drivelink", widget: "string" }
       - { label: "Leiding", name: "leiding", widget: "list" }
       - { label: "Email", name: "email", widget: "string" }
