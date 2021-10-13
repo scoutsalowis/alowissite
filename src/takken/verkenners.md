@@ -7,7 +7,7 @@ leiding : [
           ]
 email : vk.alowis@hotmail.com
 geboortestart : 14
-geboorteeind : 14
+geboorteeind : 17
 ---
 
 Bij de verkenners (14–17 jaar) is er ruimte voor grotere projecten.
