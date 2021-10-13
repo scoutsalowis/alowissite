@@ -6,8 +6,8 @@ leiding : [
             , "Samuel (Diepzeegroene Verrassende Raccoon)"
           ]
 email : vk.alowis@hotmail.com
-geboortestart : 14
-geboorteeind : 17
+geboortestart : 17
+geboorteeind : 14
 ---
 
 Bij de verkenners (14–17 jaar) is er ruimte voor grotere projecten.
