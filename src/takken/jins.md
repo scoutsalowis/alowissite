@@ -4,7 +4,7 @@ drivelink : https://drive.google.com/file/d/10XJ6SCtVuVXzn03-gLDcW6q2YSXN7dHO/pr
 leiding : [
             "Daan (Oceaanblauwe Dartele Suricata)"
           ]
-email :
+email : daantermont@hotmail.be
 geboortestart : 18
 geboorteeind : 17
 ---
