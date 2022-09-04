@@ -16,7 +16,7 @@ layout : 'base.njk'
     <a href="/takken/kapoenen" class="tak-snippet">
         <section>
             <h2>Kapoenen</h2>
-            <p>Geboren 2014-2015</p>
+            <p>Geboren <span id="kapoen_jaar">...</span></p>
             <img src="/assets/kapoenen/logo/logo_140.webp" alt="kapoenenlogo"
                  width="140" height="240"
                  srcset="/assets/kapoenen/logo/logo_140.webp 140w,
@@ -29,7 +29,7 @@ layout : 'base.njk'
     <a href="/takken/welpen" class="tak-snippet">
         <section>
             <h2>Welpen</h2>
-            <p>Geboren 2011-2013</p>
+            <p>Geboren <span id="welp_jaar">...</span></p>
             <img src="/assets/welpen/logo/logo_140.webp" alt="welpenlogo"
                  width="140" height="240"
                  srcset="/assets/welpen/logo/logo_140.webp 140w,
@@ -42,7 +42,7 @@ layout : 'base.njk'
     <a href="/takken/jongverkenners" class="tak-snippet">
         <section>
             <h2>Jongverkenners</h2>
-            <p>Geboren 2008-2010</p>
+            <p>Geboren <span id="jv_jaar">...</span></p>
             <img src="/assets/jongverkenners/logo/logo_140.webp" alt="jongverkennerslogo"
                  width="140" height="240"
                  srcset="/assets/jongverkenners/logo/logo_140.webp 140w,
@@ -55,7 +55,7 @@ layout : 'base.njk'
     <a href="/takken/verkenners" class="tak-snippet">
         <section>
             <h2>Verkenners</h2>
-            <p>Geboren 2005-2007</p>
+            <p>Geboren <span id="vk_jaar">...</span></p>
             <img src="/assets/verkenners/logo/logo_140.webp" alt="verkennerslogo"
                  width="140" height="240"
                  srcset="/assets/verkenners/logo/logo_140.webp 140w,
@@ -68,7 +68,7 @@ layout : 'base.njk'
     <a href="/takken/jins" class="tak-snippet">
         <section>
             <h2>Jins</h2>
-            <p>Geboren 2004</p>
+            <p>Geboren <span id="jin_jaar">...</span></p>
             <img src="/assets/jins/logo/logo_140.webp" alt="jinslogo"
                  width="140" height="240"
                  srcset="/assets/jins/logo/logo_140.webp 140w,
@@ -78,3 +78,33 @@ layout : 'base.njk'
         </section>
     </a>
 </section>
+<script>
+    const vandaag = new Date();
+    const naEenAugustus = vandaag > new Date(vandaag.getFullYear(), 07, 1) ? 1 : 0;
+    const jaar = vandaag.getFullYear() + naEenAugustus - 1;
+
+    const startKapoen = jaar - 8 + 1;
+    const eindKapoen = jaar - 6;
+    const leeftijdKapoen = startKapoen === eindKapoen ? `${startKapoen}` : `${startKapoen}-${eindKapoen}`;
+    document.getElementById("kapoen_jaar").innerHTML = leeftijdKapoen;
+
+    const startWelp = jaar - 11 + 1;
+    const eindWelp = jaar - 8;
+    const leeftijdWelp = startWelp === eindWelp ? `${startWelp}` : `${startWelp}-${eindWelp}`;
+    document.getElementById("welp_jaar").innerHTML = leeftijdWelp;
+
+    const startJv = jaar - 14 + 1;
+    const eindJv = jaar - 11;
+    const leeftijdJv = startJv === eindJv ? `${startJv}` : `${startJv}-${eindJv}`;
+    document.getElementById("jv_jaar").innerHTML = leeftijdJv;
+
+    const startVk = jaar - 17 + 1;
+    const eindVk = jaar - 14;
+    const leeftijdVk = startVk === eindVk ? `${startVk}` : `${startVk}-${eindVk}`;
+    document.getElementById("vk_jaar").innerHTML = leeftijdVk;
+
+    const startJin = jaar - 18 + 1;
+    const eindJin = jaar - 17;
+    const leeftijdJin = startJin === eindJin ? `${startJin}` : `${startJin}-${eindJin}`;
+    document.getElementById("jin_jaar").innerHTML = leeftijdJin;
+</script>
