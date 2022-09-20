@@ -1,9 +1,10 @@
 ---
 title : jins
 drivelink : https://drive.google.com/file/d/10XJ6SCtVuVXzn03-gLDcW6q2YSXN7dHO/preview
-leiding : [
-            "Daan (Oceaanblauwe Dartele Suricata)"
-          ]
+leiding : 
+  - "?"
+  - "?"
+  - "?"
 email : jins@scoutsalowis.be
 geboortestart : 18
 geboorteeind : 17
