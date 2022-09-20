@@ -2,9 +2,9 @@
 title: welpen
 drivelink: https://drive.google.com/file/d/1CMCYvibtWYO7JS5bHnj0oxgLJKtDoq5_/preview
 leiding:
-  - Joachim (Geoxideerd Bronze Opvallende Simia)
-  - Ben (Populierblauwe Nijverige Moeflon)
-  - Senne (Grafietgrijze Doordachte Wapiti)
+  - "?"
+  - "?"
+  - "?"
 email: welpen@scoutsalowis.be
 geboortestart: 11
 geboorteeind: 8

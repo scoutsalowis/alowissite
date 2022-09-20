@@ -1,11 +1,10 @@
 ---
 title : jongverkenners
 drivelink : https://drive.google.com/file/d/1_9JMjJYouJRsc5VY4DafEtWfAGAXxOzd/preview
-leiding : [
-            "Cedric (Zilverblauwe Genietende Bergbever)"
-            , "Joeri (Hemelroze Volgzame Panda)"
-            , "Boris (Vuurrode Intensieve Alpaca)"
-          ]
+leiding : 
+  - "?"
+  - "?"
+  - "?"
 email : jongverkenners@scoutsalowis.be
 geboortestart : 14
 geboorteeind : 11
