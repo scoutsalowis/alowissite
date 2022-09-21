@@ -2,9 +2,10 @@
 title: welpen
 drivelink: https://drive.google.com/file/d/1CMCYvibtWYO7JS5bHnj0oxgLJKtDoq5_/preview
 leiding:
-  - "?"
-  - "?"
-  - "?"
+  - "Boris (Vuurrode Intensieve Alpaca)"
+  - "Ian (Sterjasmijnwit Bedachtzaam Zeepaardje)"
+  - "Jasper"
+  - "Arthur (Opaalblauwe Enthousiaste Fura)"
 email: welpen@scoutsalowis.be
 geboortestart: 11
 geboorteeind: 8
