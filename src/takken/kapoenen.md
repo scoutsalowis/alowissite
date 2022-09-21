@@ -2,9 +2,9 @@
 title: kapoenen
 drivelink: https://drive.google.com/file/d/1BfPDtYZgZ0NWaG_JnefxfBHR-ykxdGoI/preview
 leiding:
-  - Ben (Populierblauwe Nijverige Moeflon)
-  - Jonah (Vurige Tarpan)
-  - Robbe (Junglegroene Volgzame Streepmuis)
+  - "Ben (Populierblauwe Nijverige Moeflon)"
+  - "Jonah (Vurige Tarpan)"
+  - "Robbe (Junglegroene Volgzame Streepmuis)"
 email: kapoenen@scoutsalowis.be
 geboortestart: 8
 geboorteeind: 6
