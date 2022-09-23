@@ -2,9 +2,9 @@
 title : verkenners
 drivelink : https://drive.google.com/file/d/111OKwdp765TJTIrpcxrPD9mMeHYd0SVL/preview
 leiding : 
-  - "?"
-  - "?"
-  - "?"
+  - "Cedric (Zilverblauwe Genietende Bergbever)"
+  - "Joeri (Hemelroze Volgzame Panda)"
+  - "Joachim (Geoxideerdbronze Opvallende Simia)"
 email : verkenners@scoutsalowis.be
 geboortestart : 17
 geboorteeind : 14
