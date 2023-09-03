@@ -1,12 +1,8 @@
 ---
 title : jongverkenners
-drivelink : https://drive.google.com/file/d/1_9JMjJYouJRsc5VY4DafEtWfAGAXxOzd/preview
+drivelink : https://drive.google.com/file/d/1-oq53kTvAGYXQ73udOzkT1gbSKn0XHo0/preview
 leiding : 
-  - "Brecht (Avocadogroene Afwachtende Specht)"
-  - "Joshua (Dankbare Labrador)"
-  - "Bert (Satijnrode Onbevreesde Jak)"
-  - "Senne (Grafietgrijze Doordachte Wapiti)"
-  - "Robbe (Carambolagele Pronkende Wasbeer)"
+  - "???"
 email : jongverkenners@scoutsalowis.be
 geboortestart : 14
 geboorteeind : 11

@@ -1,8 +1,8 @@
 ---
 title : jins
-drivelink : https://drive.google.com/file/d/10XJ6SCtVuVXzn03-gLDcW6q2YSXN7dHO/preview
+drivelink : https://drive.google.com/file/d/1nO_LQFp9G8UHsP2Mw76SHft89U4Gug9D/preview
 leiding : 
-  - "Samuel (Diepzeegroene Verrassende Raccoon)"
+  - "???"
 email : jins@scoutsalowis.be
 geboortestart : 18
 geboorteeind : 17
