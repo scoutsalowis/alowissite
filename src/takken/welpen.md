@@ -4,7 +4,7 @@ drivelink: https://drive.google.com/file/d/1mO4dvYrdYZ4Aqgm-ZscEAKhQKyMxUHZu/pre
 leiding:
   - "Arthur (Opaalblauwe Enthousiaste Fura)"
   - "Bert (Satijnrode Onbevreesde Jak)"
-  - "Arroë (Bloeiendgroene Behoedzame Orang-oetan)
+  - "Arroë (Bloeiendgroene Behoedzame Orang-oetan)"
 email: welpen@scoutsalowis.be
 geboortestart: 11
 geboorteeind: 8
