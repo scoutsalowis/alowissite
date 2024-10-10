@@ -1,6 +1,6 @@
 ---
 title: welpen
-drivelink: https://drive.google.com/file/d/1MS-XZeWuUuWeiB529R4alJUK4350yIKQ/preview
+drivelink: 
 leiding:
   - "Arroë (Bloeiendgroene Behoedzame Orang-oetan)"
   - "Pieter (Horizonblauwe Openhartige Oribi)"

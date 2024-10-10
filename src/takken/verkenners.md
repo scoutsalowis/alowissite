@@ -1,6 +1,6 @@
 ---
 title : verkenners
-drivelink : https://drive.google.com/file/d/1NllFZq0lzavLM4DrSeR05-tT5NCItaa7/preview
+drivelink : 
 leiding : 
   - "Arthur (Opaalblauwe Enthousiate Fura)"
   - "Ian (Sterjasmijngroen Bedachtzaam Zeepaardje)"

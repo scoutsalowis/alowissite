@@ -1,6 +1,6 @@
 ---
 title : jins
-drivelink : https://drive.google.com/file/d/1nO_LQFp9G8UHsP2Mw76SHft89U4Gug9D/preview
+drivelink : 
 leiding : 
   - "Joeri (Hemelroze Volgzame Panda)"
   - "Samuel (Diepzeegroene Verrassende Raccoon)"
