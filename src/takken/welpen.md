@@ -2,9 +2,8 @@
 title: welpen
 drivelink: https://drive.google.com/file/d/1MS-XZeWuUuWeiB529R4alJUK4350yIKQ/preview
 leiding:
-  - "Arthur (Opaalblauwe Enthousiaste Fura)"
-  - "Bert (Satijnrode Onbevreesde Jak)"
   - "Arroë (Bloeiendgroene Behoedzame Orang-oetan)"
+  - "Pieter (Horizonblauwe Openhartige Oribi)"
 email: welpen@scoutsalowis.be
 geboortestart: 11
 geboorteeind: 8

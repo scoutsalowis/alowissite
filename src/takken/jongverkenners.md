@@ -1,11 +1,8 @@
 ---
 title : jongverkenners
-drivelink : https://drive.google.com/file/d/1-oq53kTvAGYXQ73udOzkT1gbSKn0XHo0/preview
+drivelink : https://drive.google.com/file/d/1SJ9-v5zah1UceUpJ4PQfcom-q-To6sF0/preview
 leiding : 
-  - "Lox (Geoxideerdbronze Opvallende Simia)"
-  - "Joshua (Dankbare Labrador)"
-  - "Vuurrode Intensieve Alpaca"
-  - "Vurige Tarpan"
+  - "???"
 email : jongverkenners@scoutsalowis.be
 geboortestart : 14
 geboorteeind : 11
