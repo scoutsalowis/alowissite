@@ -1,9 +1,8 @@
 ---
 title: welpen
-drivelink: 
+drivelink: https://drive.google.com/file/d/1anQiXTypd91ezaLCcn6Ss_PZRsaOQUlc/preview
 leiding:
-  - "Arroë (Bloeiendgroene Behoedzame Orang-oetan)"
-  - "Pieter (Horizonblauwe Openhartige Oribi)"
+  - "???"
 email: welpen@scoutsalowis.be
 geboortestart: 11
 geboorteeind: 8

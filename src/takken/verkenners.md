@@ -1,9 +1,8 @@
 ---
 title : verkenners
-drivelink : 
+drivelink : https://drive.google.com/file/d/12qzJc8Xl_xtScsZLRBIKRhrk1pB1XDpJ/preview
 leiding : 
-  - "Arthur (Opaalblauwe Enthousiate Fura)"
-  - "Ian (Sterjasmijngroen Bedachtzaam Zeepaardje)"
+  - "???"
 email : verkenners@scoutsalowis.be
 geboortestart : 17
 geboorteeind : 14

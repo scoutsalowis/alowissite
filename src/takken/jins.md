@@ -2,9 +2,7 @@
 title : jins
 drivelink : 
 leiding : 
-  - "Joeri (Hemelroze Volgzame Panda)"
-  - "Samuel (Diepzeegroene Verrassende Raccoon)"
-  - "Lox (Geoxideerdbronze Opvallende Simia)"
+  - "???"
 email : jins@scoutsalowis.be
 geboortestart : 18
 geboorteeind : 17
