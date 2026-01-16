@@ -34,6 +34,7 @@ layout: 'base.njk'
     
     <section class="leidingsection">
         <h2>Leiding</h2>
+        <!--
         <div class="img_container">
             <img class="takleiding" src="/assets/{{ title }}/leiding/leiding_640.webp" alt="leiding {{ naam }}"
                  width="640" height="896"
@@ -42,7 +43,7 @@ layout: 'base.njk'
                          /assets/{{ title }}/leiding/leiding_1920.webp 1920w,
                          /assets/{{ title }}/leiding/leiding_2675.webp 2675w"
             >
-        </div>
+        </div> -->
         {% for leider in leiding | list %}
             <p>{{ leider }}</p>
         {% endfor %}
