@@ -2,7 +2,8 @@
 title: welpen
 drivelink: https://drive.google.com/file/d/1anQiXTypd91ezaLCcn6Ss_PZRsaOQUlc/preview
 leiding:
-  - "???"
+  - Pieter - Horizonblauwe Openhartige Oribi
+  - Ian - Abrikoosoranje Standvastige Schroefhoorngeit
 email: welpen@scoutsalowis.be
 geboortestart: 11
 geboorteeind: 8

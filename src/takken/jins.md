@@ -2,7 +2,8 @@
 title : jins
 drivelink : 
 leiding : 
-  - "???"
+  - Arthur - Opaalblauwe Enthousiaste Fura
+  - Jonah - Vurige Tarpan
 email : jins@scoutsalowis.be
 geboortestart : 18
 geboorteeind : 17

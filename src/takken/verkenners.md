@@ -1,8 +1,9 @@
 ---
 title : verkenners
-drivelink : https://drive.google.com/file/d/12qzJc8Xl_xtScsZLRBIKRhrk1pB1XDpJ/preview
+drivelink : https://drive.google.com/file/d/1XM1uQyRvzvilhC8ezLgWfc4wmW9llmOE/preview
 leiding : 
-  - "???"
+  - Jonah - Vurige Tarpan
+  - Joshua - Dankbare Labrador
 email : verkenners@scoutsalowis.be
 geboortestart : 17
 geboorteeind : 14

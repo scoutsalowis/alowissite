@@ -2,7 +2,8 @@
 title : jongverkenners
 drivelink : https://drive.google.com/file/d/1pwNXn5wqv_tgVGbdh9qWF-VwEA9-ycrE/preview
 leiding : 
-  - "???"
+  - Ward - Helicanthusgele Avontuurlijke Tijgerpython
+  - Qwinten - Maansteenwitte Werklustige Berner sennenhond
 email : jongverkenners@scoutsalowis.be
 geboortestart : 14
 geboorteeind : 11

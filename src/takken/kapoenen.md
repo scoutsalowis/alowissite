@@ -2,7 +2,8 @@
 title: kapoenen
 drivelink: "https://drive.google.com/file/d/1Fwcm29CorSZeIc_a4UWtVr0P-_s0zOpu/preview"
 leiding:
-  - "???"
+  - Arthur - Opaalblauwe Enthousiaste Fura
+  - Christophe - Parelmoerzilvere Observerende Rayador
 email: kapoenen@scoutsalowis.be
 geboortestart: 8
 geboorteeind: 6
