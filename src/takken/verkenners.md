@@ -1,6 +1,6 @@
 ---
 title : verkenners
-drivelink : https://drive.google.com/file/d/1XM1uQyRvzvilhC8ezLgWfc4wmW9llmOE/preview
+drivelink : 
 leiding : 
   - Jonah - Vurige Tarpan
   - Joshua - Dankbare Labrador
